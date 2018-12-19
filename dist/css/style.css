@@ -1,51 +1,44 @@
 .container {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .navigation {
-  position: relative;
-}
+  position: relative; }
+
 .navigation__list {
   background-color: #ccc;
   text-align: justify;
   line-height: 0;
   font-size: 0;
   margin: 0;
-  padding: 5px 15px;
+  padding: 5px 15px; }
 
-}
 .navigation__list:after {
   content: '';
   visibility: hidden;
   overflow: hidden;
   width: 100%;
   display: inline-block;
-  height: 0;
-
-}
+  height: 0; }
 
 .navigation__list__item {
   display: inline-block;
   vertical-align: top;
   list-style-type: disc;
   font-size: 14px;
-  line-height: normal;
-
-}
+  line-height: normal; }
 
 .navigation__list a {
   display: block;
   line-height: 40px;
   padding: 0 10px;
   text-decoration: none;
-  color: black;
-}
+  color: black; }
+
 .navigation__list a:hover {
   text-decoration: underline;
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .hide-nav {
   display: none;
@@ -53,8 +46,8 @@
   width: 40px;
   height: 40px;
   background-color: blue;
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .hide-nav__line {
   display: block;
   position: absolute;
@@ -62,53 +55,41 @@
   left: 10%;
   height: 3px;
   background-color: white;
-  border-radius: 5px;
-}
+  border-radius: 5px; }
 
 .hide-nav__line--top {
   top: 8px;
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .hide-nav__line--middle {
   top: 18px;
   opacity: 1;
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .hide-nav__line--bottom {
   top: 28px;
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .hide-nav.active .hide-nav__line--top {
   top: 20px;
-  transform: rotate(45deg);
-}
+  transform: rotate(45deg); }
 
 .hide-nav.active .hide-nav__line--middle {
-  opacity: 0;
-}
+  opacity: 0; }
 
 .hide-nav.active .hide-nav__line--bottom {
   top: 20px;
-  transform: rotate(-45deg);
-}
+  transform: rotate(-45deg); }
 
-@media screen and(max-width: 800px) {
+@media screen and (max-width: 800px) {
   .hide-nav {
-    display: block;
-  }
+    display: block; }
   .navigation__list {
     position: absolute;
     left: -500px;
-    width: 150px;
-  }
+    width: 150px; }
   .navigation__list.show {
     left: 0;
-    transition: 0.5s;
-  }
+    transition: 0.5s; }
   .navigation__list__item {
-    display: block;
-  }
-}
+    display: block; } }
